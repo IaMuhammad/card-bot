@@ -3,3 +3,6 @@
 /bot.log
 /cards.db
 /.env
+/logs/
+__pycache__/
+/.idea/
