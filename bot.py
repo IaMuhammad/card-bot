@@ -267,8 +267,8 @@ async def on_error(update: object, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 # ---------- main ----------
 
-def load_dotenv(path: str = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")) -> None:
-    """Read KEY=VALUE lines from .env; real environment variables win."""
+def load_dotenv(path: str = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env.example")) -> None:
+    """Read KEY=VALUE lines from .env.example; real environment variables win."""
     if not os.path.exists(path):
         return
     with open(path, encoding="utf-8") as f:
